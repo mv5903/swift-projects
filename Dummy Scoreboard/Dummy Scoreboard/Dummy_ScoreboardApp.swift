@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-@main
+@main // entry point to app, first view that user sees
 struct Dummy_ScoreboardApp: App {
     var body: some Scene {
         WindowGroup {

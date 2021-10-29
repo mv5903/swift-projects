@@ -5,6 +5,8 @@
 //  Created by Matthew Vandenberg on 10/28/21.
 //
 
+
+//Default view that the user sees. Used from main.
 import SwiftUI
 
 struct ContentView: View {
