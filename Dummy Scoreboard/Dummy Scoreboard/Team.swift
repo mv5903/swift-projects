@@ -13,12 +13,25 @@ struct Team: View {
     var score = Score(score: 0);
     var topTeam: Bool;
     var body: some View {
-        if (!topTeam) { score }
-        VStack(alignment: .center) {
-            TextField("", text: $displayText)
-                .font(.system(size: CGFloat(32)))
+        if (!topTeam) {
+            score
         }
-        if (topTeam) { score }
+        TextField("", text: $displayText)
+            .font(.system(size: CGFloat(32))).multilineTextAlignment(.center)
+        if (topTeam) {
+            score
+            GeometryReader { geo in
+                let height = geo.size.height;
+                let width = geo.size.width;
+                let thickness = 2;
+                Path() { path in
+                    path.move(to: CGPoint(x: 0, y: (Int)(height/2) + thickness));
+                    path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) + thickness)));
+                    path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) - thickness)));
+                    path.addLine(to: CGPoint(x: 0, y: (Int)(height/2) - thickness));
+                }.fill(Color.white);
+            }
+        }
     }
 }
 
