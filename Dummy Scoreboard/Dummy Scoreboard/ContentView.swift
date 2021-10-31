@@ -10,10 +10,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    var teamLeft = Team(displayText: "Left Team", colorText: Color.white, size: 24, topTeam: true)
+    
+    var teamRight = Team(displayText: "Right Team", colorText: Color.yellow, size: 24, topTeam: false)
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .center, spacing: 50) {
+            teamLeft
+            Spacer()
+            teamRight
+        }.padding(.vertical, 30);
     }
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
