@@ -13,13 +13,13 @@ struct Score: View {
     @AppStorage("resetScore") var resetScore: Int = 0;
     @State var score: Int = 0;
     var body: some View {
-        Text(String(score)).font(.system(size: CGFloat(64))).onTapGesture() {
+        Text(String(score)).font(.system(size: CGFloat(96))).onTapGesture() {
             if (scoreIncreases) {
                 score = score + increment;
             } else {
                 score = score - increment;
             }
-        }.onLongPressGesture(minimumDuration: 2) {
+        }.onLongPressGesture(minimumDuration: 1) {
             score = resetScore;
         }
     }

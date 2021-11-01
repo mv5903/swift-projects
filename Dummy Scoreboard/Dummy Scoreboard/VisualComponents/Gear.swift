@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct Gear: View {
-    @State var isPresented: Bool = false;
+    @AppStorage("isPresented") var isPresented: Bool = false;
     var body: some View {
-        Image(systemName: "gear")
+        Image(systemName: "gear").resizable().scaledToFill().frame(width: 25, height: 25)
             .onTapGesture {
                 self.isPresented = true;
-            }
-            .sheet(isPresented: $isPresented, content: {
+            }.sheet(isPresented: $isPresented, content: {
             Options();
         });
     }
