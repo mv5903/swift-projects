@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6E3010CE272C97EB00D8F7F9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3010CD272C97EB00D8F7F9 /* Team.swift */; };
+		6E5EAA2C272F491100F9B177 /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA2B272F491100F9B177 /* CenterDivider.swift */; };
+		6E5EAA31272F4BA200F9B177 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA30272F4BA200F9B177 /* Options.swift */; };
+		6E5EAA33272F5DD700F9B177 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA32272F5DD700F9B177 /* Gear.swift */; };
 		6E61BDC7272CA6BB009EA4D1 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61BDC6272CA6BB009EA4D1 /* Score.swift */; };
 		6E9651CF272B79C200466062 /* Dummy_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */; };
 		6E9651D1272B79C200466062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9651D0272B79C200466062 /* ContentView.swift */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		6E3010CD272C97EB00D8F7F9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		6E3010CF272C9DE800D8F7F9 /* Dummy-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dummy-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6E5EAA2B272F491100F9B177 /* CenterDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDivider.swift; sourceTree = "<group>"; };
+		6E5EAA30272F4BA200F9B177 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		6E5EAA32272F5DD700F9B177 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
 		6E61BDC6272CA6BB009EA4D1 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		6E9651CB272B79C200466062 /* Dummy Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dummy Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy_ScoreboardApp.swift; sourceTree = "<group>"; };
@@ -37,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E5EAA2A272F48F400F9B177 /* VisualComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6E3010CD272C97EB00D8F7F9 /* Team.swift */,
+				6E61BDC6272CA6BB009EA4D1 /* Score.swift */,
+				6E5EAA2B272F491100F9B177 /* CenterDivider.swift */,
+				6E5EAA30272F4BA200F9B177 /* Options.swift */,
+				6E5EAA32272F5DD700F9B177 /* Gear.swift */,
+			);
+			path = VisualComponents;
+			sourceTree = "<group>";
+		};
+		6E5EAA2D272F4AD900F9B177 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
 		6E9651C2272B79C200466062 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				6E3010CF272C9DE800D8F7F9 /* Dummy-Scoreboard-Info.plist */,
-				6E3010CD272C97EB00D8F7F9 /* Team.swift */,
-				6E61BDC6272CA6BB009EA4D1 /* Score.swift */,
+				6E5EAA2D272F4AD900F9B177 /* Logic */,
+				6E5EAA2A272F48F400F9B177 /* VisualComponents */,
 				6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */,
 				6E9651D0272B79C200466062 /* ContentView.swift */,
 				6E9651D2272B79C300466062 /* Assets.xcassets */,
@@ -145,10 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5EAA2C272F491100F9B177 /* CenterDivider.swift in Sources */,
 				6E3010CE272C97EB00D8F7F9 /* Team.swift in Sources */,
 				6E9651D1272B79C200466062 /* ContentView.swift in Sources */,
 				6E61BDC7272CA6BB009EA4D1 /* Score.swift in Sources */,
+				6E5EAA33272F5DD700F9B177 /* Gear.swift in Sources */,
 				6E9651CF272B79C200466062 /* Dummy_ScoreboardApp.swift in Sources */,
+				6E5EAA31272F4BA200F9B177 /* Options.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,10 +14,15 @@ struct ContentView: View {
     
     var teamRight = Team(displayText: "Right Team", colorText: Color.yellow, size: 24, topTeam: false)
     
+    var gear = Gear();
+    
     var body: some View {
         VStack(alignment: .center, spacing: 50) {
+            gear
             teamLeft
-            Spacer()
+            CenterDivider().onLongPressGesture(minimumDuration: 2) {
+                //todo reset scores
+            }
             teamRight
         }.padding(.vertical, 30);
     }
