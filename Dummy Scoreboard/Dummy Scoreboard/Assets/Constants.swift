@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct Constants {
-    struct Screen {
-        
+    static func getAppFont(size: CGFloat) -> Font {
+        return Font.custom("San-Francisco", size: CGFloat(size));
     }
+    
 }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CenterDivider: View {
-    @AppStorage("orientation") var orientated: String = "Portrait";
-    @AppStorage("showCenterDivider") var showCenterDivider: Bool = true;
+
+    @State var direction: String = "Horizontal";
 
     var body: some View {
         GeometryReader { geo in
@@ -17,7 +17,7 @@ struct CenterDivider: View {
             let width = geo.size.width;
             let thickness = 5;
             Path() { path in
-                if (orientated == "Portrait") {
+                if (direction == "Horizontal") {
                     path.move(to: CGPoint(x: 0, y: (Int)(height/2) + thickness));
                     path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) + thickness)));
                     path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) - thickness)));
@@ -33,13 +33,6 @@ struct CenterDivider: View {
     }
     
     func getFillColor() -> Color {
-        if (showCenterDivider) {
-            return UITraitCollection.current.userInterfaceStyle == .dark ? Color.black : Color.white;
-        }
-        return getFillColorBasedOnSystem();
-    }
-    
-    func getFillColorBasedOnSystem() -> Color {
         return UITraitCollection.current.userInterfaceStyle == .dark ? Color.white : Color.black;
     }
 }
