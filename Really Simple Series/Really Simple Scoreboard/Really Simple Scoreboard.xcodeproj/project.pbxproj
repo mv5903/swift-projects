@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E3010CE272C97EB00D8F7F9 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3010CD272C97EB00D8F7F9 /* Team.swift */; };
-		6E5EAA2C272F491100F9B177 /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA2B272F491100F9B177 /* CenterDivider.swift */; };
-		6E5EAA31272F4BA200F9B177 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA30272F4BA200F9B177 /* Options.swift */; };
-		6E5EAA33272F5DD700F9B177 /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5EAA32272F5DD700F9B177 /* Gear.swift */; };
-		6E61BDC7272CA6BB009EA4D1 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61BDC6272CA6BB009EA4D1 /* Score.swift */; };
-		6E7F60542731088300F6786E /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7F60532731088300F6786E /* Storage.swift */; };
-		6E9651CF272B79C200466062 /* Dummy_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */; };
-		6E9651D1272B79C200466062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9651D0272B79C200466062 /* ContentView.swift */; };
-		6E9651D3272B79C300466062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9651D2272B79C300466062 /* Assets.xcassets */; };
-		6E9651D6272B79C300466062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9651D5272B79C300466062 /* Preview Assets.xcassets */; };
-		6EF68F61272FB41100CF9817 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF68F60272FB41100CF9817 /* Constants.swift */; };
+		6E97AA822732280700A48628 /* Really_Simple_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */; };
+		6E97AA842732280700A48628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97AA832732280700A48628 /* ContentView.swift */; };
+		6E97AA862732280700A48628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA852732280700A48628 /* Assets.xcassets */; };
+		6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA882732280700A48628 /* Preview Assets.xcassets */; };
+		6EF69E642732291D0067460F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5E2732291D0067460F /* Team.swift */; };
+		6EF69E652732291D0067460F /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5F2732291D0067460F /* Options.swift */; };
+		6EF69E662732291D0067460F /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E602732291D0067460F /* CenterDivider.swift */; };
+		6EF69E672732291D0067460F /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E612732291D0067460F /* Gear.swift */; };
+		6EF69E682732291D0067460F /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E622732291D0067460F /* Help.swift */; };
+		6EF69E692732291D0067460F /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E632732291D0067460F /* Score.swift */; };
+		6EF69E6B2732292D0067460F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF69E6A2732292D0067460F /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E3010CD272C97EB00D8F7F9 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
-		6E3010CF272C9DE800D8F7F9 /* Dummy-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dummy-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
-		6E5EAA2B272F491100F9B177 /* CenterDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterDivider.swift; sourceTree = "<group>"; };
-		6E5EAA30272F4BA200F9B177 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
-		6E5EAA32272F5DD700F9B177 /* Gear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gear.swift; sourceTree = "<group>"; };
-		6E61BDC6272CA6BB009EA4D1 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
-		6E7F60532731088300F6786E /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		6E9651CB272B79C200466062 /* Dummy Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dummy Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy_ScoreboardApp.swift; sourceTree = "<group>"; };
-		6E9651D0272B79C200466062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6E9651D2272B79C300466062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E9651D5272B79C300466062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6EF68F60272FB41100CF9817 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Really Simple Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Really_Simple_ScoreboardApp.swift; sourceTree = "<group>"; };
+		6E97AA832732280700A48628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E97AA852732280700A48628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E97AA882732280700A48628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EF69E5E2732291D0067460F /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = VisualComponents/Team.swift; sourceTree = "<group>"; };
+		6EF69E5F2732291D0067460F /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Options.swift; path = VisualComponents/Options.swift; sourceTree = "<group>"; };
+		6EF69E602732291D0067460F /* CenterDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterDivider.swift; path = VisualComponents/CenterDivider.swift; sourceTree = "<group>"; };
+		6EF69E612732291D0067460F /* Gear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gear.swift; path = VisualComponents/Gear.swift; sourceTree = "<group>"; };
+		6EF69E622732291D0067460F /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Help.swift; path = VisualComponents/Help.swift; sourceTree = "<group>"; };
+		6EF69E632732291D0067460F /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Score.swift; path = VisualComponents/Score.swift; sourceTree = "<group>"; };
+		6EF69E6A2732292D0067460F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Really-Simple-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E9651C8272B79C200466062 /* Frameworks */ = {
+		6E97AA7B2732280700A48628 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,101 +47,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E5EAA2A272F48F400F9B177 /* VisualComponents */ = {
+		6E97AA752732280700A48628 = {
 			isa = PBXGroup;
 			children = (
-				6E3010CD272C97EB00D8F7F9 /* Team.swift */,
-				6E61BDC6272CA6BB009EA4D1 /* Score.swift */,
-				6E5EAA2B272F491100F9B177 /* CenterDivider.swift */,
-				6E5EAA30272F4BA200F9B177 /* Options.swift */,
-				6E5EAA32272F5DD700F9B177 /* Gear.swift */,
-			);
-			path = VisualComponents;
-			sourceTree = "<group>";
-		};
-		6E9651C2272B79C200466062 = {
-			isa = PBXGroup;
-			children = (
-				6E9651CD272B79C200466062 /* Dummy Scoreboard */,
-				6E9651CC272B79C200466062 /* Products */,
+				6E97AA802732280700A48628 /* Really Simple Scoreboard */,
+				6E97AA7F2732280700A48628 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E9651CC272B79C200466062 /* Products */ = {
+		6E97AA7F2732280700A48628 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E9651CB272B79C200466062 /* Dummy Scoreboard.app */,
+				6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E9651CD272B79C200466062 /* Dummy Scoreboard */ = {
+		6E97AA802732280700A48628 /* Really Simple Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
-				6E3010CF272C9DE800D8F7F9 /* Dummy-Scoreboard-Info.plist */,
-				6EF68F5D272FB0A500CF9817 /* Assets */,
-				6E5EAA2A272F48F400F9B177 /* VisualComponents */,
-				6E9651CE272B79C200466062 /* Dummy_ScoreboardApp.swift */,
-				6E9651D0272B79C200466062 /* ContentView.swift */,
-				6E9651D2272B79C300466062 /* Assets.xcassets */,
-				6E9651D4272B79C300466062 /* Preview Content */,
+				6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */,
+				6EF69E6A2732292D0067460F /* Assets */,
+				6EF69E602732291D0067460F /* CenterDivider.swift */,
+				6EF69E612732291D0067460F /* Gear.swift */,
+				6EF69E622732291D0067460F /* Help.swift */,
+				6EF69E5F2732291D0067460F /* Options.swift */,
+				6EF69E632732291D0067460F /* Score.swift */,
+				6EF69E5E2732291D0067460F /* Team.swift */,
+				6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */,
+				6E97AA832732280700A48628 /* ContentView.swift */,
+				6E97AA852732280700A48628 /* Assets.xcassets */,
+				6E97AA872732280700A48628 /* Preview Content */,
 			);
-			path = "Dummy Scoreboard";
+			path = "Really Simple Scoreboard";
 			sourceTree = "<group>";
 		};
-		6E9651D4272B79C300466062 /* Preview Content */ = {
+		6E97AA872732280700A48628 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6E9651D5272B79C300466062 /* Preview Assets.xcassets */,
+				6E97AA882732280700A48628 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6EF68F5D272FB0A500CF9817 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				6EF68F60272FB41100CF9817 /* Constants.swift */,
-				6E7F60532731088300F6786E /* Storage.swift */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E9651CA272B79C200466062 /* Dummy Scoreboard */ = {
+		6E97AA7D2732280700A48628 /* Really Simple Scoreboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E9651D9272B79C300466062 /* Build configuration list for PBXNativeTarget "Dummy Scoreboard" */;
+			buildConfigurationList = 6E97AA8C2732280700A48628 /* Build configuration list for PBXNativeTarget "Really Simple Scoreboard" */;
 			buildPhases = (
-				6E9651C7272B79C200466062 /* Sources */,
-				6E9651C8272B79C200466062 /* Frameworks */,
-				6E9651C9272B79C200466062 /* Resources */,
+				6E97AA7A2732280700A48628 /* Sources */,
+				6E97AA7B2732280700A48628 /* Frameworks */,
+				6E97AA7C2732280700A48628 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Dummy Scoreboard";
-			productName = "Dummy Scoreboard";
-			productReference = 6E9651CB272B79C200466062 /* Dummy Scoreboard.app */;
+			name = "Really Simple Scoreboard";
+			productName = "Really Simple Scoreboard";
+			productReference = 6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E9651C3272B79C200466062 /* Project object */ = {
+		6E97AA762732280700A48628 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					6E9651CA272B79C200466062 = {
+					6E97AA7D2732280700A48628 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 6E9651C6272B79C200466062 /* Build configuration list for PBXProject "Dummy Scoreboard" */;
+			buildConfigurationList = 6E97AA792732280700A48628 /* Build configuration list for PBXProject "Really Simple Scoreboard" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -149,49 +133,49 @@
 				en,
 				Base,
 			);
-			mainGroup = 6E9651C2272B79C200466062;
-			productRefGroup = 6E9651CC272B79C200466062 /* Products */;
+			mainGroup = 6E97AA752732280700A48628;
+			productRefGroup = 6E97AA7F2732280700A48628 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E9651CA272B79C200466062 /* Dummy Scoreboard */,
+				6E97AA7D2732280700A48628 /* Really Simple Scoreboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E9651C9272B79C200466062 /* Resources */ = {
+		6E97AA7C2732280700A48628 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E9651D6272B79C300466062 /* Preview Assets.xcassets in Resources */,
-				6E9651D3272B79C300466062 /* Assets.xcassets in Resources */,
+				6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */,
+				6EF69E6B2732292D0067460F /* Assets in Resources */,
+				6E97AA862732280700A48628 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E9651C7272B79C200466062 /* Sources */ = {
+		6E97AA7A2732280700A48628 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E5EAA2C272F491100F9B177 /* CenterDivider.swift in Sources */,
-				6E3010CE272C97EB00D8F7F9 /* Team.swift in Sources */,
-				6E9651D1272B79C200466062 /* ContentView.swift in Sources */,
-				6E61BDC7272CA6BB009EA4D1 /* Score.swift in Sources */,
-				6E5EAA33272F5DD700F9B177 /* Gear.swift in Sources */,
-				6E7F60542731088300F6786E /* Storage.swift in Sources */,
-				6E9651CF272B79C200466062 /* Dummy_ScoreboardApp.swift in Sources */,
-				6E5EAA31272F4BA200F9B177 /* Options.swift in Sources */,
-				6EF68F61272FB41100CF9817 /* Constants.swift in Sources */,
+				6EF69E682732291D0067460F /* Help.swift in Sources */,
+				6EF69E652732291D0067460F /* Options.swift in Sources */,
+				6EF69E692732291D0067460F /* Score.swift in Sources */,
+				6EF69E662732291D0067460F /* CenterDivider.swift in Sources */,
+				6EF69E672732291D0067460F /* Gear.swift in Sources */,
+				6EF69E642732291D0067460F /* Team.swift in Sources */,
+				6E97AA842732280700A48628 /* ContentView.swift in Sources */,
+				6E97AA822732280700A48628 /* Really_Simple_ScoreboardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6E9651D7272B79C300466062 /* Debug */ = {
+		6E97AA8A2732280700A48628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +236,7 @@
 			};
 			name = Debug;
 		};
-		6E9651D8272B79C300466062 /* Release */ = {
+		6E97AA8B2732280700A48628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,7 +273,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -308,22 +291,20 @@
 			};
 			name = Release;
 		};
-		6E9651DA272B79C300466062 /* Debug */ = {
+		6E97AA8D2732280700A48628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icons";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dummy Scoreboard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Really Simple Scoreboard/Preview Content\"";
 				DEVELOPMENT_TEAM = 79XMENDA99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Dummy-Scoreboard-Info.plist";
+				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -332,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Dummy-Scoreboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -340,22 +321,20 @@
 			};
 			name = Debug;
 		};
-		6E9651DB272B79C300466062 /* Release */ = {
+		6E97AA8E2732280700A48628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icons";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Dummy Scoreboard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Really Simple Scoreboard/Preview Content\"";
 				DEVELOPMENT_TEAM = 79XMENDA99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Dummy-Scoreboard-Info.plist";
+				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -364,7 +343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Dummy-Scoreboard";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -375,25 +354,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E9651C6272B79C200466062 /* Build configuration list for PBXProject "Dummy Scoreboard" */ = {
+		6E97AA792732280700A48628 /* Build configuration list for PBXProject "Really Simple Scoreboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E9651D7272B79C300466062 /* Debug */,
-				6E9651D8272B79C300466062 /* Release */,
+				6E97AA8A2732280700A48628 /* Debug */,
+				6E97AA8B2732280700A48628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E9651D9272B79C300466062 /* Build configuration list for PBXNativeTarget "Dummy Scoreboard" */ = {
+		6E97AA8C2732280700A48628 /* Build configuration list for PBXNativeTarget "Really Simple Scoreboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E9651DA272B79C300466062 /* Debug */,
-				6E9651DB272B79C300466062 /* Release */,
+				6E97AA8D2732280700A48628 /* Debug */,
+				6E97AA8E2732280700A48628 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E9651C3272B79C200466062 /* Project object */;
+	rootObject = 6E97AA762732280700A48628 /* Project object */;
 }

@@ -16,6 +16,7 @@ struct ContentView: View {
     var body: some View {
         Group {
             GeometryReader { g in
+                // View is in Portrait
                 if g.size.width < g.size.height {
                     GeometryReader { geo in
                         let height = geo.size.height;
@@ -26,9 +27,11 @@ struct ContentView: View {
                                 CenterDivider(direction: "Horizontal")
                                 teamRight
                             }.padding(.vertical, 20);
+                            Help().position(x: 15, y: height/2 - 30);
                             gear.position(x: width - 15, y: height/2 - 30);
                         }
                     }
+                // View is in Lanscape
                 } else  {
                     GeometryReader { geo in
                         ZStack() {
@@ -38,6 +41,7 @@ struct ContentView: View {
                                 teamRight
                             }
                             gear.position(x: 25, y: 25);
+                            Help().position(x: geo.size.width - 25, y: 25);
                         }
                     }
                 }

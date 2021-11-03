@@ -12,6 +12,7 @@ struct Options: View {
     @AppStorage("scoreIncreases") var scoreIncreases: Bool = true;
     @AppStorage("resetScore") var resetScore: Int = 0;
     @AppStorage("isPresented") var isPresented: Bool = false;
+    @AppStorage("showTeamNames") var showTeamNames: Bool = true;
     var body: some View {
         ZStack () {
             NavigationView {
@@ -23,21 +24,32 @@ struct Options: View {
                             NavigationLink("Bottom Team", destination: EditTeam(isTopTeam: false));
                         }.navigationBarTitle(Text("Teams"));
                     });
-                    // Edit Scoring Criterea
-                    NavigationLink("Edit Scoring Criteria", destination: {});
-                    Section(header: Text("Change Score By")) {
-                        TextField("Amount", value: $increment, formatter: NumberFormatter()).keyboardType(.numberPad);
-                    }
-                    Section(header: Text("Reset Score To")) {
-                        TextField("Score", value: $resetScore, formatter: NumberFormatter()).keyboardType(.numberPad);
-                    }
+                    // Edit Scoring Criteria
+                    NavigationLink("Edit Scoring Criteria", destination: {
+                        Form {
+                            NavigationLink("Change Score By", destination: {
+                                Form {
+                                    TextField("Amount", value: $increment, formatter: NumberFormatter()).keyboardType(.numberPad);
+                                }.navigationBarTitle(Text("Change Score By"))
+                            });
+                            NavigationLink("Reset Score To", destination: {
+                                Form {
+                                    TextField("Score", value: $resetScore, formatter: NumberFormatter()).keyboardType(.numberPad);
+                                }.navigationBarTitle(Text("Reset Score To"))
+                            });
+                            Section(footer: Text("This won't affect the current score.")) {
+                                Button("Reset To Default") {
+                                    increment = 1;
+                                    scoreIncreases = true;
+                                    resetScore = 0;
+                                }
+                            }
+                        }.navigationBarTitle(Text("Scoring Criteria"));
+                    });
+                    // Other Miscellaneous Options
                     Section(header: Text("Other Options"), footer: Text(scoreIncreases ? "Score will increase when tapping the score. Toggle off to decrease instead." : "Score will decrease when tapping the score. Toggle on to increase instead.")) {
+                        Toggle("Show Team Names", isOn: $showTeamNames);
                         Toggle("Score Increases", isOn: $scoreIncreases);
-                    }
-                    Button("Reset To Default") {
-                        increment = 1;
-                        scoreIncreases = true;
-                        resetScore = 0;
                     }
                 }.navigationBarTitle(Text("Options"))
             }
