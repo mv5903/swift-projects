@@ -33,7 +33,7 @@
 		6EF69E622732291D0067460F /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Help.swift; path = VisualComponents/Help.swift; sourceTree = "<group>"; };
 		6EF69E632732291D0067460F /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Score.swift; path = VisualComponents/Score.swift; sourceTree = "<group>"; };
 		6EF69E6A2732292D0067460F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Really-Simple-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Really-Simple-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,7 +294,7 @@
 		6E97AA8D2732280700A48628 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icons";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -303,6 +303,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Scoreboard;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -324,7 +325,7 @@
 		6E97AA8E2732280700A48628 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icons";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -333,6 +334,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Scoreboard;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -342,7 +344,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
