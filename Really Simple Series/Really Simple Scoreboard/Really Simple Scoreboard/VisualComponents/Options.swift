@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct Options: View {
-    @AppStorage("increment") var increment: Int = 1;
-    @AppStorage("scoreIncreases") var scoreIncreases: Bool = true;
-    @AppStorage("resetScore") var resetScore: Int = 0;
-    @AppStorage("isPresented") var isPresented: Bool = false;
-    @AppStorage("showTeamNames") var showTeamNames: Bool = true;
+    @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
+    @AppStorage("teamInfo.topTeam.score") var topTeamScore: Int = 0;
+    @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "Bottom Team";
+    @AppStorage("teamInfo.bottomTeam.score") var bottomTeamScore: Int = 0;
+    @AppStorage("deviceInfo.showTeamNames") var showTeamNames: Bool = true;
+    @AppStorage("scoreInfo.scoreIncreases") var scoreIncreases: Bool = true;
+    @AppStorage("scoreInfo.incrementScoreBy") var increment: Int = 1;
+    @AppStorage("scoreInfo.resetScoreTo") var reset: Int = 0;
+    
+    @AppStorage("optionsArePresented") var optionsPresented: Bool = false;
+    
     var body: some View {
         ZStack () {
             NavigationView {
+                // Outer most form, first form user sees when tapping the gear icon
                 Form {
                     // Edit Team Information
                     NavigationLink("Edit Team Info", destination: {
@@ -34,14 +41,14 @@ struct Options: View {
                             });
                             NavigationLink("Reset Score To", destination: {
                                 Form {
-                                    TextField("Score", value: $resetScore, formatter: NumberFormatter()).keyboardType(.numberPad);
+                                    TextField("Score", value: $reset, formatter: NumberFormatter()).keyboardType(.numberPad);
                                 }.navigationBarTitle(Text("Reset Score To"))
                             });
                             Section(footer: Text("This won't affect the current score.")) {
-                                Button("Reset To Default") {
+                                Button("Reset Scoring Options To Default") {
                                     increment = 1;
                                     scoreIncreases = true;
-                                    resetScore = 0;
+                                    reset = 0;
                                 }
                             }
                         }.navigationBarTitle(Text("Scoring Criteria"));
@@ -56,7 +63,7 @@ struct Options: View {
             GeometryReader { geo in
                 Image(systemName: "xmark.circle").resizable().scaledToFill().frame(width: 25, height: 25)
                     .onTapGesture {
-                        isPresented = false;
+                        optionsPresented = false;
                     }.position(x: geo.size.width - 25, y: 25)
             }
         }
@@ -64,8 +71,8 @@ struct Options: View {
 }
 
 struct EditTeam: View {
-    @AppStorage("topTeamName") var topTeamName: String = "Top Team";
-    @AppStorage("bottomTeamName") var bottomTeamName: String = "Bottom Team";
+    @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
+    @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "Bottom Team";
     @State var isTopTeam: Bool = true;
     var body: some View {
         Form {

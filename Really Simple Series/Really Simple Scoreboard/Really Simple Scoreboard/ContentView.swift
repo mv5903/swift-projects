@@ -10,39 +10,35 @@
 import SwiftUI
 
 struct ContentView: View {
-    var teamLeft = Team(colorText: Color.white, size: 24, isTopTeam: true)
-    var teamRight = Team(colorText: Color.yellow, size: 24, isTopTeam: false)
-    var gear = Gear();
+    var topTeam = Team(isTop: true)
+    var bottomTeam = Team(isTop: false);
     var body: some View {
         Group {
             GeometryReader { g in
+                // Define height and width of current view
+                let height = g.size.height;
+                let width = g.size.width;
                 // View is in Portrait
-                if g.size.width < g.size.height {
-                    GeometryReader { geo in
-                        let height = geo.size.height;
-                        let width = geo.size.width;
-                        ZStack() {
-                            VStack(alignment: .center, spacing: 50) {
-                                teamLeft
-                                CenterDivider(direction: "Horizontal")
-                                teamRight
-                            }.padding(.vertical, 20);
-                            Help().position(x: 15, y: height/2 - 30);
-                            gear.position(x: width - 15, y: height/2 - 30);
-                        }
+                if width < height {
+                    ZStack() {
+                        VStack(alignment: .center, spacing: 50) {
+                            topTeam
+                            CenterDivider(direction: "Horizontal")
+                            bottomTeam
+                        }.padding(.vertical, 20);
+                        Help().position(x: 15, y: height/2 - 30);
+                        Gear().position(x: width - 15, y: height/2 - 30);
                     }
                 // View is in Lanscape
                 } else  {
-                    GeometryReader { geo in
-                        ZStack() {
-                            HStack(alignment: .center) {
-                                teamLeft
-                                CenterDivider(direction: "Vertical")
-                                teamRight
-                            }
-                            gear.position(x: 25, y: 25);
-                            Help().position(x: geo.size.width - 25, y: 25);
+                    ZStack() {
+                        HStack(alignment: .center) {
+                            topTeam
+                            CenterDivider(direction: "Vertical")
+                            bottomTeam
                         }
+                        Gear().position(x: 25, y: 25);
+                        Help().position(x: width - 25, y: 25);
                     }
                 }
             }

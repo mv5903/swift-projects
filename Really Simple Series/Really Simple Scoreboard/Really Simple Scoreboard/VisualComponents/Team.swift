@@ -7,29 +7,68 @@
 import SwiftUI
 
 struct Team: View {
-    @AppStorage("topTeamName") var topTeamName: String = "Top Team";
-    @AppStorage("bottomTeamName") var bottomTeamName: String = "Bottom Team";
-    @AppStorage("orientation") var orientated: String = "Portrait";
-    @AppStorage("showTeamNames") var showTeamNames: Bool = true;
-    @State var colorText: Color;
-    var size: Int;
-    var isTopTeam: Bool;
-    @State var score = Score(score: 0);
+    @AppStorage("teamInfo.topTeam.name") var topName: String = "Top Team";
+    @AppStorage("teamInfo.bottomTeam.name") var bottomName: String = "Bottom Team";
+    @AppStorage("deviceInfo.orientation") var orientation: String = "Portrait";
+    @AppStorage("deviceInfo.showTeamNames") var showTeamNames: Bool = true;
+    
+    @State var isTop: Bool = true;
     var body: some View {
-        if orientated == "Portrait" {
-            !isTopTeam ? score : nil;
-            showTeamNames ? TextField("", text: isTopTeam ? $topTeamName : $bottomTeamName)
-                .font(.system(size: CGFloat(46))).multilineTextAlignment(.center) : nil;
-            if (isTopTeam) {
-                score
+        
+        if orientation == "Portrait" {
+            !isTop ? Score(isTopTeam: false) : nil;
+            
+            if (showTeamNames) {
+                Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46)))
             }
+
+            isTop ? Score(isTopTeam: true) : nil;
         } else {
             VStack(alignment: .center, spacing: 50) {
-                TextField("", text: isTopTeam ? $topTeamName : $bottomTeamName)
-                    .font(.system(size: CGFloat(46))).multilineTextAlignment(.center)
-                score
+                Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46)))
+                Score(isTopTeam: isTop);
             }
         }
     }
 }
 
+struct Score: View {
+    @State var isTopTeam: Bool = true;
+    @AppStorage("teamInfo.topTeam.score") var topScore: Int = 0;
+    @AppStorage("teamInfo.bottomTeam.score") var bottomScore: Int = 0;
+    @AppStorage("scoreInfo.incrementScoreBy") var increment: Int = 1;
+    @AppStorage("scoreInfo.scoreIncreases") var scoreIncreases: Bool = true;
+    @AppStorage("scoreInfo.resetScoreTo") var resetScoreTo: Int = 0;
+
+    var body: some View {
+        Text(String(isTopTeam ? topScore : bottomScore)).font(.system(size: CGFloat(96))).onTapGesture(count: 2) {
+            decrementScore();
+        }.onTapGesture(count: 1) {
+            incrementScore();
+        }.onLongPressGesture(minimumDuration: 1) {
+            resetScore();
+        }
+    }
+    
+    func resetScore() -> Void {
+        if (isTopTeam) {
+            topScore = resetScoreTo;
+        } else {
+            bottomScore = resetScoreTo;
+        }
+    }
+    func incrementScore() -> Void {
+        if (isTopTeam) {
+            topScore = scoreIncreases ? topScore + increment : topScore - increment;
+        } else {
+            bottomScore = scoreIncreases ? bottomScore + increment : bottomScore - increment;
+        }
+    }
+    func decrementScore() -> Void {
+        if (isTopTeam) {
+            topScore = scoreIncreases ? topScore - increment : topScore + increment;
+        } else {
+            bottomScore = scoreIncreases ? bottomScore - increment : bottomScore + increment;
+        }
+    }
+}

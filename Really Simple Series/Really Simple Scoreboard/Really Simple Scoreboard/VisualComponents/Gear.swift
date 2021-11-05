@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Gear: View {
-    @AppStorage("isPresented") var isPresented: Bool = false;
+    @AppStorage("optionsArePresented") var isPresented: Bool = false;
     var body: some View {
         Image(systemName: "gear").resizable().scaledToFill().frame(width: 25, height: 25)
             .onTapGesture {
