@@ -10,8 +10,10 @@ import SwiftUI
 struct Options: View {
     @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
     @AppStorage("teamInfo.topTeam.score") var topTeamScore: Int = 0;
+    @AppStorage("teamInfo.topTeam.fontColor") var topTeamColor: String = Data.colorToString(color: Color.white);
     @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "Bottom Team";
     @AppStorage("teamInfo.bottomTeam.score") var bottomTeamScore: Int = 0;
+    @AppStorage("teamInfo.bottomTeam.fontColor") var bottomTeamColor: String = Data.colorToString(color: Color.white);
     @AppStorage("deviceInfo.showTeamNames") var showTeamNames: Bool = true;
     @AppStorage("scoreInfo.scoreIncreases") var scoreIncreases: Bool = true;
     @AppStorage("scoreInfo.incrementScoreBy") var increment: Int = 1;
@@ -72,8 +74,14 @@ struct Options: View {
 
 struct EditTeam: View {
     @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
+    @AppStorage("teamInfo.topTeam.fontColor") var topTeamColor: String = Data.colorToString(color: Color.white);
+    @AppStorage("teamInfo.topTeam.scoreColor") var topScoreColor: String = Data.colorToString(color: Color.white);
     @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "Bottom Team";
+    @AppStorage("teamInfo.bottomTeam.fontColor") var bottomTeamColor: String = Data.colorToString(color: Color.white);
+    @AppStorage("teamInfo.bottomTeam.scoreColor") var bottomScoreColor: String = Data.colorToString(color: Color.white);
     @State var isTopTeam: Bool = true;
+    @State var selectedFontColor: Color = Color.white;
+    @State var selectedScoreColor: Color = Color.white;
     var body: some View {
         Form {
             // Edit Team Name
@@ -82,7 +90,35 @@ struct EditTeam: View {
                     TextField(isTopTeam ? "Top Team Name" : "Bottom Team Name", text: isTopTeam ? $topTeamName : $bottomTeamName)
                 }.submitLabel(.done).navigationBarTitle(Text(isTopTeam ? "Top Team Name" : "Bottom Team Name"));
             })
+            NavigationLink("Edit Team Font Color", destination: {
+                Form {}.navigationBarTitle(Text((isTopTeam ? "Top " : "Bottom ") + "Team Font Color"))
+                ColorPicker("Color", selection: $selectedFontColor)
+                    .padding(.horizontal, 150)
+                    .onChange(of: selectedFontColor) { _ in convertColor(toChange: "selectedFontColor") }
+            })
+            NavigationLink("Edit Score Color", destination: {
+                Form {}.navigationBarTitle(Text((isTopTeam ? "Top " : "Bottom ") + "Score Color"))
+                ColorPicker("Color", selection: $selectedScoreColor)
+                    .padding(.horizontal, 150)
+                    .onChange(of: selectedScoreColor) { _ in convertColor(toChange: "selectedScoreColor") };
+            })
         }.navigationBarTitle(Text("Team Options"));
+    }
+    
+    func convertColor(toChange: String) -> Void {
+        if (toChange == "selectedFontColor") {
+            if (isTopTeam) {
+                topTeamColor = Data.colorToString(color: selectedFontColor);
+            } else {
+                bottomTeamColor = Data.colorToString(color: selectedFontColor);
+            }
+        } else {
+            if (isTopTeam) {
+                topScoreColor = Data.colorToString(color: selectedScoreColor);
+            } else {
+                bottomScoreColor = Data.colorToString(color: selectedScoreColor);
+            }
+        }
     }
 }
 
