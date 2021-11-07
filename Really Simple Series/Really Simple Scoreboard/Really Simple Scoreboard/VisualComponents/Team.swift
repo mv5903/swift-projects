@@ -43,9 +43,10 @@ struct Score: View {
     @AppStorage("scoreInfo.resetScoreTo") var resetScoreTo: Int = 0;
     @AppStorage("teamInfo.topTeam.scoreColor") var topScoreColor: String = Data.colorToString(color: Color.white);
     @AppStorage("teamInfo.bottomTeam.scoreColor") var bottomScoreColor: String = Data.colorToString(color: Color.white);
+    @AppStorage("scoreInfo.fontSize") var scoreSize: Int = 90;
 
     var body: some View {
-        Text(String(isTopTeam ? topScore : bottomScore)).font(.system(size: CGFloat(96))).onTapGesture(count: 2) {
+        Text(String(isTopTeam ? topScore : bottomScore)).font(.system(size: CGFloat(scoreSize))).onTapGesture(count: 2) {
             decrementScore();
         }.onTapGesture(count: 1) {
             incrementScore();

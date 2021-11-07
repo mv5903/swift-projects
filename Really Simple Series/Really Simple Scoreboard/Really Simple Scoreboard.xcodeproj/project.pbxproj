@@ -17,7 +17,6 @@
 		6EF69E662732291D0067460F /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E602732291D0067460F /* CenterDivider.swift */; };
 		6EF69E672732291D0067460F /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E612732291D0067460F /* Gear.swift */; };
 		6EF69E682732291D0067460F /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E622732291D0067460F /* Help.swift */; };
-		6EF69E6B2732292D0067460F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 6EF69E6A2732292D0067460F /* Assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		6EF69E602732291D0067460F /* CenterDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterDivider.swift; path = VisualComponents/CenterDivider.swift; sourceTree = "<group>"; };
 		6EF69E612732291D0067460F /* Gear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gear.swift; path = VisualComponents/Gear.swift; sourceTree = "<group>"; };
 		6EF69E622732291D0067460F /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Help.swift; path = VisualComponents/Help.swift; sourceTree = "<group>"; };
-		6EF69E6A2732292D0067460F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Really-Simple-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 			isa = PBXGroup;
 			children = (
 				6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */,
-				6EF69E6A2732292D0067460F /* Assets */,
 				6EF69E602732291D0067460F /* CenterDivider.swift */,
 				6EF69E612732291D0067460F /* Gear.swift */,
 				6E16F2EF2734684F008B340C /* Data.swift */,
@@ -149,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */,
-				6EF69E6B2732292D0067460F /* Assets in Resources */,
 				6E97AA862732280700A48628 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -344,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

@@ -12,6 +12,7 @@ import SwiftUI
 struct ContentView: View {
     var topTeam = Team(isTop: true)
     var bottomTeam = Team(isTop: false);
+    @AppStorage("deviceInfo.orientation") var devOrientation: String = "Portrait";
     var body: some View {
         Group {
             GeometryReader { g in
@@ -28,7 +29,7 @@ struct ContentView: View {
                         }.padding(.vertical, 20);
                         Help().position(x: 15, y: height/2 - 30);
                         Gear().position(x: width - 15, y: height/2 - 30);
-                    }
+                    }.onAppear{changeOrientation(orientation: "Portrait")}
                 // View is in Lanscape
                 } else  {
                     ZStack() {
@@ -39,10 +40,14 @@ struct ContentView: View {
                         }
                         Gear().position(x: 25, y: 25);
                         Help().position(x: width - 25, y: 25);
-                    }
+                    }.onAppear{changeOrientation(orientation: "Landscape")}
                 }
             }
         }
+    }
+    
+    func changeOrientation(orientation: String) -> Void {
+        devOrientation = orientation;
     }
 }
 

@@ -22,6 +22,7 @@ struct Data {
     @AppStorage("scoreInfo.scoreIncreases") var scoreIncreases: Bool = true;
     @AppStorage("scoreInfo.incrementScoreBy") var increment: Int = 1;
     @AppStorage("scoreInfo.resetScoreTo") var reset: Int = 0;
+    @AppStorage("scoreInfo.fontSize") var scoreSize: Int = 36;
 
     static func colorToString(color: Color) -> String {
         
@@ -39,8 +40,11 @@ struct Data {
     
     static func stringToColor(color: String) -> Color {
         let array = color.components(separatedBy: ",")
-        print(array);
         let doublearray = [Double(array[0]), Double(array[1]), Double(array[2]), Double(array[3])];
         return Color(red: doublearray[0] ?? 0, green: doublearray[1] ?? 0, blue: doublearray[2] ?? 0, opacity: doublearray[3] ?? 0);
+    }
+    
+    static func getAppFont(size: CGFloat) -> Font {
+        return Font.custom("San-Francisco", size: CGFloat(size));
     }
 }

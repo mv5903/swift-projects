@@ -13,7 +13,7 @@ struct Help: View {
     var body: some View {
         Image(systemName: "questionmark.circle").resizable().scaledToFill().frame(width: 25, height: 25)
             .onTapGesture {
-                self.showAlert =true
+                self.showAlert = true
             }.alert(isPresented: $showAlert) {
                 Alert(
                     title: Text("How to Use this App"),
