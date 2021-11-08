@@ -27,7 +27,9 @@ struct Team: View {
             isTop ? Score(isTopTeam: true) : nil;
         } else {
             VStack(alignment: .center, spacing: 50) {
-                Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? Data.stringToColor(color: topColor) : Data.stringToColor(color: bottomColor));
+                if (showTeamNames) {
+                    Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? Data.stringToColor(color: topColor) : Data.stringToColor(color: bottomColor));
+                }
                 Score(isTopTeam: isTop);
             }
         }
