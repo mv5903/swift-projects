@@ -10,6 +10,7 @@ import SwiftUI
 struct CenterDivider: View {
 
     @State var direction: String = "Horizontal";
+    @Environment(\.colorScheme) var colorScheme;
 
     var body: some View {
         GeometryReader { geo in
@@ -28,11 +29,8 @@ struct CenterDivider: View {
                     path.addLine(to: CGPoint(x: Int(width/2) + thickness, y: Int(height)));
                     path.addLine(to: CGPoint(x: Int(width/2) + thickness, y: 0));
                 }
-            }.fill(getFillColor());
+            }.fill(colorScheme == .dark ? Color.white : Color.black);
         }
     }
-    
-    func getFillColor() -> Color {
-        return UITraitCollection.current.userInterfaceStyle == .dark ? Color.white : Color.black;
-    }
 }
+

@@ -13,6 +13,11 @@ struct ContentView: View {
     var topTeam = Team(isTop: true)
     var bottomTeam = Team(isTop: false);
     @AppStorage("deviceInfo.orientation") var devOrientation: String = "Portrait";
+    
+    init() {
+        Data().setAppearence();
+    }
+    
     var body: some View {
         Group {
             GeometryReader { g in

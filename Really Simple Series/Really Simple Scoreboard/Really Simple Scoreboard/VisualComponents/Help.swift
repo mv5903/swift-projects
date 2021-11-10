@@ -17,7 +17,7 @@ struct Help: View {
             }.alert(isPresented: $showAlert) {
                 Alert(
                     title: Text("How to Use this App"),
-                    message: Text("Tap a score to change it.\nDouble-tap to undo last score change.\nLong press score to reset it.")
+                    message: Text("Tap or right swipe a score to change it.\nLeft swipe to undo last score change.\nLong press score to reset it.")
                 )
             }
     }

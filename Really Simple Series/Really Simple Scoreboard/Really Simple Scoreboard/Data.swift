@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 
 struct Data {
+    
+    
     @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
     @AppStorage("teamInfo.topTeam.score") var topTeamScore: Int = 0;
     @AppStorage("teamInfo.topTeam.fontColor") var topTeamColor: String = Data.colorToString(color: Color.white);
@@ -23,6 +25,15 @@ struct Data {
     @AppStorage("scoreInfo.incrementScoreBy") var increment: Int = 1;
     @AppStorage("scoreInfo.resetScoreTo") var reset: Int = 0;
     @AppStorage("scoreInfo.fontSize") var scoreSize: Int = 36;
+
+    @Environment(\.colorScheme) var colorScheme;
+    
+    func setAppearence() -> Void {
+        topTeamColor = colorScheme == .dark ? Data.colorToString(color: Color.white) : Data.colorToString(color: Color.black);
+        bottomTeamColor = colorScheme == .dark ? Data.colorToString(color: Color.white) : Data.colorToString(color: Color.black);
+        topScoreColor = colorScheme == .dark ? Data.colorToString(color: Color.white) : Data.colorToString(color: Color.black);
+        bottomScoreColor = colorScheme == .dark ? Data.colorToString(color: Color.white) : Data.colorToString(color: Color.black);
+    }
 
     static func colorToString(color: Color) -> String {
         
@@ -48,3 +59,4 @@ struct Data {
         return Font.custom("San-Francisco", size: CGFloat(size));
     }
 }
+
