@@ -10,6 +10,9 @@ Here's what I am currently working on or have planned:
 <br><br>
 Want to help me beta test my apps before they are released to the public? [Join my TestFlight](https://testflight.apple.com/join/sXXyp1r0) and help me out!
 ---
+Officially released on the App Store:
+[Really Simple Scoreboard](https://apps.apple.com/us/app/really-simple-scoreboard/id1593322410)
+---
 Here's my favorite error while learning Swift so far:
 <br>
 *Code*
