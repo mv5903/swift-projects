@@ -17,30 +17,91 @@ struct Team: View {
     @State var isTop: Bool = true;
     
     @Environment(\.colorScheme) var colorScheme;
-    
+
     var body: some View {
-        
-        if orientation == "Portrait" {
-            !isTop ? Score(isTopTeam: false) : nil;
-            
-            if (showTeamNames) {
-                Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? getColor(col: topColor) : getColor(col: bottomColor));
-            }
-            
-            isTop ? Score(isTopTeam: true) : nil;
-        } else {
-            VStack(alignment: .center, spacing: 50) {
-                if (showTeamNames) {
-                    Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? getColor(col: topColor) : getColor(col: bottomColor));
+        GeometryReader { geo in
+            if orientation == "Portrait" {
+                let score = isTop ? Score(isTopTeam: true) : Score(isTopTeam: false)
+               
+                ZStack {
+                    Rectangle()
+                        .fill(colorScheme == .dark ? Color.black : Color.white)
+                        .frame(width: geo.size.width, height: geo.size.height)
+                    
+                    VStack {
+                        if (!isTop) {
+                            score
+                            Spacer()
+                        }
+                        
+                        if (showTeamNames) {
+                            Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? getColor(col: topColor) : getColor(col: bottomColor));
+                        }
+                        
+                        if (isTop) {
+                            score
+                        }
+                    }
                 }
-                Score(isTopTeam: isTop);
+                .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global)
+                .onEnded { value in
+                    let horizontalAmount = value.translation.width as CGFloat
+                    let verticalAmount = value.translation.height as CGFloat
+            
+                    if abs(horizontalAmount) > abs(verticalAmount) {
+                        if (horizontalAmount < 0) {
+                            //Left Swipe
+                            score.decrementScore();
+                        } else {
+                            //Right Swipe
+                            score.incrementScore();
+                        }
+                    }
+                }).onTapGesture(count: 1) {
+                    score.incrementScore();
+                }.onLongPressGesture(minimumDuration: 1) {
+                    score.resetScore();
+                }
+            } else {
+                let score = Score(isTopTeam: isTop);
+                ZStack {
+                    Rectangle()
+                        .fill(colorScheme == .dark ? Color.black : Color.white)
+                        .frame(width: geo.size.width, height: geo.size.height)
+                    
+                    VStack(alignment: .center, spacing: 50) {
+                        if (showTeamNames) {
+                            Text(isTop ? topName : bottomName).font(.system(size: CGFloat(46))).foregroundColor(isTop ? getColor(col: topColor) : getColor(col: bottomColor));
+                        }
+                        score
+                    }
+                }
+                .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global)
+                .onEnded { value in
+                    let horizontalAmount = value.translation.width as CGFloat
+                    let verticalAmount = value.translation.height as CGFloat
+            
+                    if abs(horizontalAmount) > abs(verticalAmount) {
+                        if (horizontalAmount < 0) {
+                            //Left Swipe
+                            score.decrementScore();
+                        } else {
+                            //Right Swipe
+                            score.incrementScore();
+                        }
+                    }
+                }).onTapGesture(count: 1) {
+                    score.incrementScore();
+                }.onLongPressGesture(minimumDuration: 1) {
+                    score.resetScore();
+                }
             }
         }
     }
     
     
     func getColor(col: String) -> Color {
-        //First, check if variale matches a dark or light mode scheme and make sure they don't conflict
+        //First, check if variable matches a dark or light mode scheme and make sure they don't conflict
         let backgroundColor = colorScheme == .dark ? Color.black : Color.white;
         if (col == Data.colorToString(color: backgroundColor)) {
             //If we enter this if block, we conclude that the background color is the same as the font color, which is a problem!
@@ -69,25 +130,8 @@ struct Score: View {
     
     var body: some View {
         Text(String(isTopTeam ? topScore : bottomScore))
-            .font(.system(size:CGFloat(scoreSize))).gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global)
-                .onEnded { value in
-                    let horizontalAmount = value.translation.width as CGFloat
-                    let verticalAmount = value.translation.height as CGFloat
-            
-                    if abs(horizontalAmount) > abs(verticalAmount) {
-                        if (horizontalAmount < 0) {
-                            //Left Swipe
-                            decrementScore();
-                        } else {
-                            //Right Swipe
-                            incrementScore();
-                        }
-                    }
-        }).onTapGesture(count: 1) {
-            incrementScore();
-        }.onLongPressGesture(minimumDuration: 1) {
-            resetScore();
-        }.foregroundColor(isTopTeam ? getColor(col: topScoreColor) : getColor(col: bottomScoreColor));
+            .font(.system(size:CGFloat(scoreSize)))
+            .foregroundColor(isTopTeam ? getColor(col: topScoreColor) : getColor(col: bottomScoreColor));
     }
     
     func getColor(col: String) -> Color {

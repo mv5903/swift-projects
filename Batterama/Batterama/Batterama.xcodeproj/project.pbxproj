@@ -7,35 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E16F2F02734684F008B340C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E16F2EF2734684F008B340C /* Data.swift */; };
-		6E97AA822732280700A48628 /* Really_Simple_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */; };
-		6E97AA842732280700A48628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97AA832732280700A48628 /* ContentView.swift */; };
-		6E97AA862732280700A48628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA852732280700A48628 /* Assets.xcassets */; };
-		6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA882732280700A48628 /* Preview Assets.xcassets */; };
-		6EF69E642732291D0067460F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5E2732291D0067460F /* Team.swift */; };
-		6EF69E652732291D0067460F /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5F2732291D0067460F /* Options.swift */; };
-		6EF69E662732291D0067460F /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E602732291D0067460F /* CenterDivider.swift */; };
-		6EF69E672732291D0067460F /* Gear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E612732291D0067460F /* Gear.swift */; };
-		6EF69E682732291D0067460F /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E622732291D0067460F /* Help.swift */; };
+		6E8BC140274C151600F7C8BA /* BatteramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8BC13F274C151600F7C8BA /* BatteramaApp.swift */; };
+		6E8BC142274C151600F7C8BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8BC141274C151600F7C8BA /* ContentView.swift */; };
+		6E8BC144274C151600F7C8BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8BC143274C151600F7C8BA /* Assets.xcassets */; };
+		6E8BC147274C151600F7C8BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E8BC146274C151600F7C8BA /* Preview Assets.xcassets */; };
+		6E8BC14E274C187D00F7C8BA /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8BC14D274C187D00F7C8BA /* FirstLaunch.swift */; };
+		6E8BC150274C195C00F7C8BA /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8BC14F274C195C00F7C8BA /* Database.swift */; };
+		6E8BC152274C1EE000F7C8BA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E8BC151274C1EE000F7C8BA /* MainMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E16F2EF2734684F008B340C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Really Simple Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Really_Simple_ScoreboardApp.swift; sourceTree = "<group>"; };
-		6E97AA832732280700A48628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6E97AA852732280700A48628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6E97AA882732280700A48628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6EF69E5E2732291D0067460F /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = VisualComponents/Team.swift; sourceTree = "<group>"; };
-		6EF69E5F2732291D0067460F /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Options.swift; path = VisualComponents/Options.swift; sourceTree = "<group>"; };
-		6EF69E602732291D0067460F /* CenterDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterDivider.swift; path = VisualComponents/CenterDivider.swift; sourceTree = "<group>"; };
-		6EF69E612732291D0067460F /* Gear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gear.swift; path = VisualComponents/Gear.swift; sourceTree = "<group>"; };
-		6EF69E622732291D0067460F /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Help.swift; path = VisualComponents/Help.swift; sourceTree = "<group>"; };
-		6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Really-Simple-Scoreboard-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6E8BC13C274C151600F7C8BA /* Batterama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Batterama.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E8BC13F274C151600F7C8BA /* BatteramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteramaApp.swift; sourceTree = "<group>"; };
+		6E8BC141274C151600F7C8BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6E8BC143274C151600F7C8BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E8BC146274C151600F7C8BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E8BC14D274C187D00F7C8BA /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		6E8BC14F274C195C00F7C8BA /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		6E8BC151274C1EE000F7C8BA /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		6EEFEB4D2754330A0094AB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E97AA7B2732280700A48628 /* Frameworks */ = {
+		6E8BC139274C151600F7C8BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,44 +39,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E97AA752732280700A48628 = {
+		6E8BC133274C151600F7C8BA = {
 			isa = PBXGroup;
 			children = (
-				6E97AA802732280700A48628 /* Really Simple Scoreboard */,
-				6E97AA7F2732280700A48628 /* Products */,
+				6E8BC13E274C151600F7C8BA /* Batterama */,
+				6E8BC13D274C151600F7C8BA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E97AA7F2732280700A48628 /* Products */ = {
+		6E8BC13D274C151600F7C8BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */,
+				6E8BC13C274C151600F7C8BA /* Batterama.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E97AA802732280700A48628 /* Really Simple Scoreboard */ = {
+		6E8BC13E274C151600F7C8BA /* Batterama */ = {
 			isa = PBXGroup;
 			children = (
-				6EF69E6C27322B370067460F /* Really-Simple-Scoreboard-Info.plist */,
-				6EF69E602732291D0067460F /* CenterDivider.swift */,
-				6EF69E612732291D0067460F /* Gear.swift */,
-				6E16F2EF2734684F008B340C /* Data.swift */,
-				6EF69E622732291D0067460F /* Help.swift */,
-				6EF69E5F2732291D0067460F /* Options.swift */,
-				6EF69E5E2732291D0067460F /* Team.swift */,
-				6E97AA812732280700A48628 /* Really_Simple_ScoreboardApp.swift */,
-				6E97AA832732280700A48628 /* ContentView.swift */,
-				6E97AA852732280700A48628 /* Assets.xcassets */,
-				6E97AA872732280700A48628 /* Preview Content */,
+				6EEFEB4D2754330A0094AB62 /* Info.plist */,
+				6E8BC151274C1EE000F7C8BA /* MainMenu.swift */,
+				6E8BC14F274C195C00F7C8BA /* Database.swift */,
+				6E8BC13F274C151600F7C8BA /* BatteramaApp.swift */,
+				6E8BC141274C151600F7C8BA /* ContentView.swift */,
+				6E8BC143274C151600F7C8BA /* Assets.xcassets */,
+				6E8BC145274C151600F7C8BA /* Preview Content */,
+				6E8BC14D274C187D00F7C8BA /* FirstLaunch.swift */,
 			);
-			path = "Really Simple Scoreboard";
+			path = Batterama;
 			sourceTree = "<group>";
 		};
-		6E97AA872732280700A48628 /* Preview Content */ = {
+		6E8BC145274C151600F7C8BA /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				6E97AA882732280700A48628 /* Preview Assets.xcassets */,
+				6E8BC146274C151600F7C8BA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -90,39 +81,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E97AA7D2732280700A48628 /* Really Simple Scoreboard */ = {
+		6E8BC13B274C151600F7C8BA /* Batterama */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E97AA8C2732280700A48628 /* Build configuration list for PBXNativeTarget "Really Simple Scoreboard" */;
+			buildConfigurationList = 6E8BC14A274C151600F7C8BA /* Build configuration list for PBXNativeTarget "Batterama" */;
 			buildPhases = (
-				6E97AA7A2732280700A48628 /* Sources */,
-				6E97AA7B2732280700A48628 /* Frameworks */,
-				6E97AA7C2732280700A48628 /* Resources */,
+				6E8BC138274C151600F7C8BA /* Sources */,
+				6E8BC139274C151600F7C8BA /* Frameworks */,
+				6E8BC13A274C151600F7C8BA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Really Simple Scoreboard";
-			productName = "Really Simple Scoreboard";
-			productReference = 6E97AA7E2732280700A48628 /* Really Simple Scoreboard.app */;
+			name = Batterama;
+			productName = Batterama;
+			productReference = 6E8BC13C274C151600F7C8BA /* Batterama.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E97AA762732280700A48628 /* Project object */ = {
+		6E8BC134274C151600F7C8BA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					6E97AA7D2732280700A48628 = {
+					6E8BC13B274C151600F7C8BA = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
-			buildConfigurationList = 6E97AA792732280700A48628 /* Build configuration list for PBXProject "Really Simple Scoreboard" */;
+			buildConfigurationList = 6E8BC137274C151600F7C8BA /* Build configuration list for PBXProject "Batterama" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -130,48 +121,45 @@
 				en,
 				Base,
 			);
-			mainGroup = 6E97AA752732280700A48628;
-			productRefGroup = 6E97AA7F2732280700A48628 /* Products */;
+			mainGroup = 6E8BC133274C151600F7C8BA;
+			productRefGroup = 6E8BC13D274C151600F7C8BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E97AA7D2732280700A48628 /* Really Simple Scoreboard */,
+				6E8BC13B274C151600F7C8BA /* Batterama */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E97AA7C2732280700A48628 /* Resources */ = {
+		6E8BC13A274C151600F7C8BA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */,
-				6E97AA862732280700A48628 /* Assets.xcassets in Resources */,
+				6E8BC147274C151600F7C8BA /* Preview Assets.xcassets in Resources */,
+				6E8BC144274C151600F7C8BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E97AA7A2732280700A48628 /* Sources */ = {
+		6E8BC138274C151600F7C8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EF69E682732291D0067460F /* Help.swift in Sources */,
-				6EF69E652732291D0067460F /* Options.swift in Sources */,
-				6EF69E662732291D0067460F /* CenterDivider.swift in Sources */,
-				6EF69E672732291D0067460F /* Gear.swift in Sources */,
-				6EF69E642732291D0067460F /* Team.swift in Sources */,
-				6E97AA842732280700A48628 /* ContentView.swift in Sources */,
-				6E97AA822732280700A48628 /* Really_Simple_ScoreboardApp.swift in Sources */,
-				6E16F2F02734684F008B340C /* Data.swift in Sources */,
+				6E8BC152274C1EE000F7C8BA /* MainMenu.swift in Sources */,
+				6E8BC14E274C187D00F7C8BA /* FirstLaunch.swift in Sources */,
+				6E8BC142274C151600F7C8BA /* ContentView.swift in Sources */,
+				6E8BC150274C195C00F7C8BA /* Database.swift in Sources */,
+				6E8BC140274C151600F7C8BA /* BatteramaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		6E97AA8A2732280700A48628 /* Debug */ = {
+		6E8BC148274C151600F7C8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		6E97AA8B2732280700A48628 /* Release */ = {
+		6E8BC149274C151600F7C8BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,30 +275,29 @@
 			};
 			name = Release;
 		};
-		6E97AA8D2732280700A48628 /* Debug */ = {
+		6E8BC14B274C151600F7C8BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Really Simple Scoreboard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Batterama/Preview Content\"";
 				DEVELOPMENT_TEAM = 79XMENDA99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Scoreboard;
+				INFOPLIST_FILE = Batterama/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattvandenberg.Batterama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,30 +305,29 @@
 			};
 			name = Debug;
 		};
-		6E97AA8E2732280700A48628 /* Release */ = {
+		6E8BC14C274C151600F7C8BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Really Simple Scoreboard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Batterama/Preview Content\"";
 				DEVELOPMENT_TEAM = 79XMENDA99;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Really-Simple-Scoreboard-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Scoreboard;
+				INFOPLIST_FILE = Batterama/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mattvandenberg.Really-Simple-Scoreboard";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattvandenberg.Batterama;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -352,25 +338,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E97AA792732280700A48628 /* Build configuration list for PBXProject "Really Simple Scoreboard" */ = {
+		6E8BC137274C151600F7C8BA /* Build configuration list for PBXProject "Batterama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E97AA8A2732280700A48628 /* Debug */,
-				6E97AA8B2732280700A48628 /* Release */,
+				6E8BC148274C151600F7C8BA /* Debug */,
+				6E8BC149274C151600F7C8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E97AA8C2732280700A48628 /* Build configuration list for PBXNativeTarget "Really Simple Scoreboard" */ = {
+		6E8BC14A274C151600F7C8BA /* Build configuration list for PBXNativeTarget "Batterama" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E97AA8D2732280700A48628 /* Debug */,
-				6E97AA8E2732280700A48628 /* Release */,
+				6E8BC14B274C151600F7C8BA /* Debug */,
+				6E8BC14C274C151600F7C8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6E97AA762732280700A48628 /* Project object */;
+	rootObject = 6E8BC134274C151600F7C8BA /* Project object */;
 }

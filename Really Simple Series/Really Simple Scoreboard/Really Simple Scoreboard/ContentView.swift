@@ -27,11 +27,12 @@ struct ContentView: View {
                 // View is in Portrait
                 if width < height {
                     ZStack() {
-                        VStack(alignment: .center, spacing: 50) {
+                        VStack() {
                             topTeam
                             CenterDivider(direction: "Horizontal")
+                                .frame(width: width, height: 6)
                             bottomTeam
-                        }.padding(.vertical, 20);
+                        }
                         Help().position(x: 15, y: height/2 - 30);
                         Gear().position(x: width - 15, y: height/2 - 30);
                     }.onAppear{changeOrientation(orientation: "Portrait")}
@@ -41,6 +42,7 @@ struct ContentView: View {
                         HStack(alignment: .center) {
                             topTeam
                             CenterDivider(direction: "Vertical")
+                                .frame(width: 6, height: height)
                             bottomTeam
                         }
                         Gear().position(x: 25, y: 25);

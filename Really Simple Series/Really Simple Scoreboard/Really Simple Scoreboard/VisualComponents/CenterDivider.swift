@@ -14,23 +14,24 @@ struct CenterDivider: View {
 
     var body: some View {
         GeometryReader { geo in
-            let height = geo.size.height;
+            let height = CGFloat(geo.size.height);
             let width = geo.size.width;
-            let thickness = 5;
-            Path() { path in
-                if (direction == "Horizontal") {
-                    path.move(to: CGPoint(x: 0, y: (Int)(height/2) + thickness));
-                    path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) + thickness)));
-                    path.addLine(to: CGPoint(x: Int(width), y: (Int(height/2) - thickness)));
-                    path.addLine(to: CGPoint(x: 0, y: (Int)(height/2) - thickness));
-                } else {
-                    path.move(to: CGPoint(x: Int(width/2) - thickness, y: 0));
-                    path.addLine(to: CGPoint(x: Int(width/2) - thickness, y: Int(height)));
-                    path.addLine(to: CGPoint(x: Int(width/2) + thickness, y: Int(height)));
-                    path.addLine(to: CGPoint(x: Int(width/2) + thickness, y: 0));
-                }
-            }.fill(colorScheme == .dark ? Color.white : Color.black);
+            let thickness = 3;
+            
+            if (direction == "Horizontal") {
+                Rectangle()
+                    .frame(width: width*2, height: thickness*2)
+                    .background(Color.white)
+                    .position(x: 0, y: height/2 - CGFloat(thickness))
+            } else {
+                Rectangle()
+                    .frame(width: thickness*2, height: height*2)
+                    .background(Color.white)
+                    .position(x: width/2 - CGFloat(thickness), y: 0)
+            }
         }
+        
     }
+    
 }
 

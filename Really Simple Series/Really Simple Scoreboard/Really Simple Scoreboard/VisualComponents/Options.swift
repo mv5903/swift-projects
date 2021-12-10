@@ -50,7 +50,7 @@ struct Options: View {
                             });
                             NavigationLink("Score Font Size", destination: {
                                 Form {
-                                    Stepper("Size: \(scoreSize)", value: $scoreSize, in: 80...160, step: 10);
+                                    Stepper("Size: \(scoreSize)", value: $scoreSize, in: 80...280, step: 10);
                                 }.navigationBarTitle(Text("Score Font Size"));
                                 Text("Preview: ");
                                 Text("0").font(.custom("San-Francisco", size: CGFloat(scoreSize)))
