@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E67F2BC2768315400A4A2DC /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F2BB2768315400A4A2DC /* Preferences.swift */; };
 		6EA4729F27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */; };
 		6EA472A127644FDE00F80FB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA472A027644FDE00F80FB3 /* ContentView.swift */; };
 		6EA472A327644FDF00F80FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA472A227644FDF00F80FB3 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E67F2BB2768315400A4A2DC /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		6EA4729B27644FDE00F80FB3 /* Really Simple To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Really Simple To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Really_Simple_To_Do_ListApp.swift; sourceTree = "<group>"; };
 		6EA472A027644FDE00F80FB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				6EA472AE2764509B00F80FB3 /* Data.swift */,
 				6EF8421D2765D76F00B3AC08 /* Test.swift */,
 				6EA472AC27644FFC00F80FB3 /* TaskList.swift */,
+				6E67F2BB2768315400A4A2DC /* Preferences.swift */,
 				6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */,
 				6EA472A027644FDE00F80FB3 /* ContentView.swift */,
 				6EA472A227644FDF00F80FB3 /* Assets.xcassets */,
@@ -158,6 +161,7 @@
 				6EF842202765E39F00B3AC08 /* AddItem.swift in Sources */,
 				6EF8421E2765D76F00B3AC08 /* Test.swift in Sources */,
 				6EA4729F27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift in Sources */,
+				6E67F2BC2768315400A4A2DC /* Preferences.swift in Sources */,
 				6EA472AF2764509B00F80FB3 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

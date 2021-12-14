@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-class Data {
+class Data : ObservableObject {
     static var userDefaults = UserDefaults.standard
+    @Published var items = getItems()
     
     /**
      Adds a ListItem object to userDefaults.
@@ -77,7 +78,7 @@ class Data {
     
 }
 
-class ListItem : Codable, Equatable {
+class ListItem : Codable, Equatable, Hashable {
     var title: String
     var desc: String
     var dueDate: Date
@@ -93,6 +94,10 @@ class ListItem : Codable, Equatable {
             a.title == b.title &&
             a.desc == b.desc &&
             a.dueDate == b.dueDate
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(title)
     }
     
     func updateTitle(title: String) -> Void {
@@ -111,5 +116,13 @@ class ListItem : Codable, Equatable {
         Data.deleteItem(item: self)
         self.dueDate = dueDate
         Data.addItem(item: self)
+    }
+    
+    func getDate() -> String {
+        let df = DateFormatter()
+        df.dateStyle = .medium
+        df.timeStyle = .none
+        df.locale = Locale(identifier: "en_US")
+        return df.string(from: self.dueDate)
     }
 }

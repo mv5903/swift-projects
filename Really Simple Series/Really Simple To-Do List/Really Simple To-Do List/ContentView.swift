@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
-        Text(Test.getText()).padding()
+        Text(Test.getText()).padding().foregroundColor(Color.black)
+        TaskList()
     }
     
 }

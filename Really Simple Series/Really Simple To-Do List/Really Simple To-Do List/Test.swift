@@ -12,15 +12,13 @@ struct Test {
         
         clearUserDefaults()
         
-        let testDate = Date(timeIntervalSinceReferenceDate: -123456789.0)
+        let testDate = Date(timeIntervalSinceReferenceDate: 1000000000)
         
         let a = ListItem(title: "Test", desc: "Text", dueDate: testDate)
         
-        Data.addItem(item: a)
-        
-        printItems()
-        
-        a.updateTitle(title: "New Title")
+        for i in 1...3 {
+            Data.addItem(item: a)
+        }
         
         printItems()
         
@@ -35,11 +33,14 @@ struct Test {
         //END
     }
     
+    /**
+     Returns current date within the device's specific locale.
+     */
     static func printItems() -> Void {
         let allItems = Data.getItems()
         print("{")
         allItems.forEach { item in
-            print("[\(item.title), \(item.desc), \(item.dueDate)]")
+            print("[\(item.title), \(item.desc), \(item.getDate())]")
         }
         print("}")
     }
