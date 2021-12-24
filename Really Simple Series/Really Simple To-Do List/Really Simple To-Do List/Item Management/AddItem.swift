@@ -2,18 +2,21 @@
 //  AddItem.swift
 //  Really Simple To-Do List
 //
-//  Created by Matthew Vandenberg on 12/12/21.
+//  Created by Matthew Vandenberg on 12/15/21.
 //
 
 import Foundation
 import SwiftUI
 
-struct AddItem: View {
+struct AddItem : View {
     @State var isPresented: Bool = false
+    
+    var listManager: ListManager
     
     @State var newItemName: String = ""
     @State var newItemDescription: String = ""
     @State var newItemDate: Date = Date()
+    
     var body: some View {
         Image(systemName: "plus.circle").resizable().scaledToFill().frame(width: 25, height: 25)
             .onTapGesture {
@@ -25,7 +28,7 @@ struct AddItem: View {
                         Section(header: Text("Task Name")) {
                             TextField("Task Name", text: $newItemName)
                         }
-                        Section(header: Text("Task Desctiption")) {
+                        Section(header: Text("Task Description")) {
                             TextField("Task Description", text: $newItemDescription)
                         }
                         Section(header: Text("Task Name")) {
@@ -44,7 +47,13 @@ struct AddItem: View {
     }
     
     func addItem() -> Void {
-        Data.addItem(item: ListItem(title: newItemName, desc: newItemDescription, dueDate: newItemDate))
+        var currentItems = listManager.decodeList()
+        print("Added Item: \(newItemName):\(newItemDescription):\(newItemDate)")
+        currentItems.append(ListItem(title: newItemName, desc: newItemDescription, date: newItemDate))
+        listManager.encodeList(theItems: currentItems)
+        listManager.refreshList()
         isPresented = false
     }
 }
+
+
