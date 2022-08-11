@@ -12,6 +12,7 @@
 		6E97AA842732280700A48628 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E97AA832732280700A48628 /* ContentView.swift */; };
 		6E97AA862732280700A48628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA852732280700A48628 /* Assets.xcassets */; };
 		6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E97AA882732280700A48628 /* Preview Assets.xcassets */; };
+		6EBA6A712896FC1F00C6DDAD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EBA6A702896FC1F00C6DDAD /* Localizable.strings */; };
 		6EF69E642732291D0067460F /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5E2732291D0067460F /* Team.swift */; };
 		6EF69E652732291D0067460F /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E5F2732291D0067460F /* Options.swift */; };
 		6EF69E662732291D0067460F /* CenterDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF69E602732291D0067460F /* CenterDivider.swift */; };
@@ -26,6 +27,7 @@
 		6E97AA832732280700A48628 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E97AA852732280700A48628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E97AA882732280700A48628 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EBA6A702896FC1F00C6DDAD /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		6EF69E5E2732291D0067460F /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Team.swift; path = VisualComponents/Team.swift; sourceTree = "<group>"; };
 		6EF69E5F2732291D0067460F /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Options.swift; path = VisualComponents/Options.swift; sourceTree = "<group>"; };
 		6EF69E602732291D0067460F /* CenterDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterDivider.swift; path = VisualComponents/CenterDivider.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				6EF69E602732291D0067460F /* CenterDivider.swift */,
 				6EF69E612732291D0067460F /* Gear.swift */,
 				6E16F2EF2734684F008B340C /* Data.swift */,
+				6EBA6A702896FC1F00C6DDAD /* Localizable.strings */,
 				6EF69E622732291D0067460F /* Help.swift */,
 				6EF69E5F2732291D0067460F /* Options.swift */,
 				6EF69E5E2732291D0067460F /* Team.swift */,
@@ -129,6 +132,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 6E97AA752732280700A48628;
 			productRefGroup = 6E97AA7F2732280700A48628 /* Products */;
@@ -146,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E97AA892732280700A48628 /* Preview Assets.xcassets in Resources */,
+				6EBA6A712896FC1F00C6DDAD /* Localizable.strings in Resources */,
 				6E97AA862732280700A48628 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,6 +233,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -282,6 +288,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

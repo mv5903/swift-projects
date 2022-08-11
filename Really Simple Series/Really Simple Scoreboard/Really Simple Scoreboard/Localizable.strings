@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Really Simple Scoreboard
+
+  Created by Matthew Vandenberg on 7/31/22.
+ */
+"howto" = "How to use this app";
+"howto.explanation" = "Tap or right swipe a score to change it.\nLeft swipe to undo last score change.\nLong press score to reset it.";
+"top.team.name" = "Top Team";
+"bottom.team.name" = "Bottom Team";

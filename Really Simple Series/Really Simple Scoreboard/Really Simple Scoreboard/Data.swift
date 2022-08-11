@@ -11,11 +11,11 @@ import SwiftUI
 struct Data {
     
     
-    @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "Top Team";
+    @AppStorage("teamInfo.topTeam.name") var topTeamName: String = "top.team.name";
     @AppStorage("teamInfo.topTeam.score") var topTeamScore: Int = 0;
     @AppStorage("teamInfo.topTeam.fontColor") var topTeamColor: String = Data.colorToString(color: Color.white);
     @AppStorage("teamInfo.topTeam.scoreColor") var topScoreColor: String = Data.colorToString(color: Color.white);
-    @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "Bottom Team";
+    @AppStorage("teamInfo.bottomTeam.name") var bottomTeamName: String = "bottom.team.name";
     @AppStorage("teamInfo.bottomTeam.score") var bottomTeamScore: Int = 0;
     @AppStorage("teamInfo.bottomTeam.fontColor") var bottomTeamColor: String = Data.colorToString(color: Color.white);
     @AppStorage("teamInfo.bottomTeam.scoreColor") var bottomScoreColor: String = Data.colorToString(color: Color.white);

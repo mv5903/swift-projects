@@ -29,14 +29,14 @@ struct Options: View {
                 // Outer most form, first form user sees when tapping the gear icon
                 Form {
                     // Edit Team Information
-                    NavigationLink("Team Options", destination: {
+                    NavigationLink("Team Settings", destination: {
                         Form {
                             NavigationLink(orientation == "Portrait" ? "Top Team" : "Left Team", destination: EditTeam(isTopTeam: true));
                             NavigationLink(orientation == "Portrait" ? "Bottom Team" : "Right Team", destination: EditTeam(isTopTeam: false));
                         }.navigationBarTitle(Text("Teams"));
                     });
                     // Edit Scoring Criteria
-                    NavigationLink("Score Options", destination: {
+                    NavigationLink("Score Settings", destination: {
                         Form {
                             NavigationLink("Change Score By", destination: {
                                 Form {
@@ -66,7 +66,7 @@ struct Options: View {
                         }.navigationBarTitle(Text("Scoring Options"));
                     });
                     // Other Miscellaneous Options
-                    Section(header: Text("Other Options"), footer: Text(scoreIncreases ? "Score will increase when tapping the score. Toggle off to decrease instead." : "Score will decrease when tapping the score. Toggle on to increase instead.")) {
+                    Section(header: Text("Other Options"), footer: Text(scoreIncreases ? "Score will increase when tapping on the score" : "Score will decrease when tapping on the score")) {
                         Toggle("Show Team Names", isOn: $showTeamNames);
                         Toggle("Score Increases", isOn: $scoreIncreases);
                     }
