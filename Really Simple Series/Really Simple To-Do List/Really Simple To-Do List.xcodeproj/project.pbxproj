@@ -7,32 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E44D3A5276AEC6B00D75E39 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3A4276AEC6B00D75E39 /* AddItem.swift */; };
-		6E44D3A7276AEC8D00D75E39 /* EditItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3A6276AEC8D00D75E39 /* EditItem.swift */; };
-		6E44D3AA276AED5E00D75E39 /* ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3A9276AED5E00D75E39 /* ListManager.swift */; };
-		6E44D3AC276AF2E300D75E39 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3AB276AF2E300D75E39 /* TaskList.swift */; };
-		6E44D3AF276AF34A00D75E39 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3AE276AF34A00D75E39 /* Preferences.swift */; };
-		6E44D3B4276B07F200D75E39 /* ViewItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3B3276B07F200D75E39 /* ViewItemDetails.swift */; };
-		6E44D3B6276B090000D75E39 /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44D3B5276B090000D75E39 /* SwiftExtensions.swift */; };
+		6E67F2BC2768315400A4A2DC /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67F2BB2768315400A4A2DC /* Preferences.swift */; };
 		6EA4729F27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */; };
 		6EA472A127644FDE00F80FB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA472A027644FDE00F80FB3 /* ContentView.swift */; };
 		6EA472A327644FDF00F80FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA472A227644FDF00F80FB3 /* Assets.xcassets */; };
 		6EA472A627644FDF00F80FB3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA472A527644FDF00F80FB3 /* Preview Assets.xcassets */; };
+		6EA472AD27644FFC00F80FB3 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA472AC27644FFC00F80FB3 /* TaskList.swift */; };
+		6EA472AF2764509B00F80FB3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA472AE2764509B00F80FB3 /* Data.swift */; };
+		6EF8421E2765D76F00B3AC08 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8421D2765D76F00B3AC08 /* Test.swift */; };
+		6EF842202765E39F00B3AC08 /* AddItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF8421F2765E39F00B3AC08 /* AddItem.swift */; };
+		6EF842222765E3B100B3AC08 /* EditItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF842212765E3B100B3AC08 /* EditItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E44D3A4276AEC6B00D75E39 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
-		6E44D3A6276AEC8D00D75E39 /* EditItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItem.swift; sourceTree = "<group>"; };
-		6E44D3A9276AED5E00D75E39 /* ListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManager.swift; sourceTree = "<group>"; };
-		6E44D3AB276AF2E300D75E39 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
-		6E44D3AE276AF34A00D75E39 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
-		6E44D3B3276B07F200D75E39 /* ViewItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemDetails.swift; sourceTree = "<group>"; };
-		6E44D3B5276B090000D75E39 /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		6E67F2BB2768315400A4A2DC /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		6EA4729B27644FDE00F80FB3 /* Really Simple To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Really Simple To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Really_Simple_To_Do_ListApp.swift; sourceTree = "<group>"; };
 		6EA472A027644FDE00F80FB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6EA472A227644FDF00F80FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EA472A527644FDF00F80FB3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6EA472AC27644FFC00F80FB3 /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
+		6EA472AE2764509B00F80FB3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		6EF8421D2765D76F00B3AC08 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		6EF8421F2765E39F00B3AC08 /* AddItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItem.swift; sourceTree = "<group>"; };
+		6EF842212765E3B100B3AC08 /* EditItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,41 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E44D3A3276AEC4D00D75E39 /* Item Management */ = {
-			isa = PBXGroup;
-			children = (
-				6E44D3A4276AEC6B00D75E39 /* AddItem.swift */,
-				6E44D3A6276AEC8D00D75E39 /* EditItem.swift */,
-				6E44D3B3276B07F200D75E39 /* ViewItemDetails.swift */,
-			);
-			path = "Item Management";
-			sourceTree = "<group>";
-		};
-		6E44D3A8276AED4000D75E39 /* Task List */ = {
-			isa = PBXGroup;
-			children = (
-				6E44D3A9276AED5E00D75E39 /* ListManager.swift */,
-				6E44D3AB276AF2E300D75E39 /* TaskList.swift */,
-			);
-			path = "Task List";
-			sourceTree = "<group>";
-		};
-		6E44D3AD276AF33500D75E39 /* Context Menus */ = {
-			isa = PBXGroup;
-			children = (
-				6E44D3AE276AF34A00D75E39 /* Preferences.swift */,
-			);
-			path = "Context Menus";
-			sourceTree = "<group>";
-		};
-		6E44D3B0276AFF6A00D75E39 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				6E44D3B5276B090000D75E39 /* SwiftExtensions.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		6EA4729227644FDE00F80FB3 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +63,12 @@
 		6EA4729D27644FDE00F80FB3 /* Really Simple To-Do List */ = {
 			isa = PBXGroup;
 			children = (
-				6E44D3B0276AFF6A00D75E39 /* Helpers */,
-				6E44D3AD276AF33500D75E39 /* Context Menus */,
-				6E44D3A8276AED4000D75E39 /* Task List */,
-				6E44D3A3276AEC4D00D75E39 /* Item Management */,
+				6EF842212765E3B100B3AC08 /* EditItem.swift */,
+				6EF8421F2765E39F00B3AC08 /* AddItem.swift */,
+				6EA472AE2764509B00F80FB3 /* Data.swift */,
+				6EF8421D2765D76F00B3AC08 /* Test.swift */,
+				6EA472AC27644FFC00F80FB3 /* TaskList.swift */,
+				6E67F2BB2768315400A4A2DC /* Preferences.swift */,
 				6EA4729E27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift */,
 				6EA472A027644FDE00F80FB3 /* ContentView.swift */,
 				6EA472A227644FDF00F80FB3 /* Assets.xcassets */,
@@ -190,15 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E44D3B4276B07F200D75E39 /* ViewItemDetails.swift in Sources */,
-				6E44D3AC276AF2E300D75E39 /* TaskList.swift in Sources */,
-				6E44D3AF276AF34A00D75E39 /* Preferences.swift in Sources */,
+				6EA472AD27644FFC00F80FB3 /* TaskList.swift in Sources */,
 				6EA472A127644FDE00F80FB3 /* ContentView.swift in Sources */,
+				6EF842222765E3B100B3AC08 /* EditItem.swift in Sources */,
+				6EF842202765E39F00B3AC08 /* AddItem.swift in Sources */,
+				6EF8421E2765D76F00B3AC08 /* Test.swift in Sources */,
 				6EA4729F27644FDE00F80FB3 /* Really_Simple_To_Do_ListApp.swift in Sources */,
-				6E44D3A7276AEC8D00D75E39 /* EditItem.swift in Sources */,
-				6E44D3A5276AEC6B00D75E39 /* AddItem.swift in Sources */,
-				6E44D3AA276AED5E00D75E39 /* ListManager.swift in Sources */,
-				6E44D3B6276B090000D75E39 /* SwiftExtensions.swift in Sources */,
+				6E67F2BC2768315400A4A2DC /* Preferences.swift in Sources */,
+				6EA472AF2764509B00F80FB3 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

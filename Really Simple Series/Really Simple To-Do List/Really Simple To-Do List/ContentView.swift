@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var listManager = ListManager()
     var body: some View {
-        Text("Tasks")
-        TaskList(listManager: listManager)
+        Text(Test.getText()).padding().foregroundColor(Color.black)
+        TaskList()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

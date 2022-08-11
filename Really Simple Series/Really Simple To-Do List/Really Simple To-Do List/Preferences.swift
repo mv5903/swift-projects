@@ -2,7 +2,7 @@
 //  Preferences.swift
 //  Really Simple To-Do List
 //
-//  Created by Matthew Vandenberg on 12/15/21.
+//  Created by Matthew Vandenberg on 12/13/21.
 //
 
 import Foundation
